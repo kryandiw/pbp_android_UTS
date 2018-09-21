@@ -21,28 +21,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/btn_upload"
-        android:layout_width="170dp"
-        android:layout_height="170dp"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@android:drawable/ic_menu_add" />
+    <!--<ImageButton-->
+        <!--android:id="@+id/btn_upload"-->
+        <!--android:layout_width="170dp"-->
+        <!--android:layout_height="170dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--app:srcCompat="@android:drawable/ic_menu_add" />-->
 
-        <ProgressBar
-            android:id="@+id/progressBar"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" />
+        <!--<ProgressBar-->
+            <!--android:id="@+id/progressBar"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true" />-->
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="Upload your photo" />
+    <!--<TextView-->
+        <!--android:id="@+id/textView4"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:textAlignment="center"-->
+        <!--android:text="Upload your photo" />-->
 
     <EditText
         android:id="@+id/signup_email"

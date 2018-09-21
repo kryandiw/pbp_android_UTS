@@ -72,6 +72,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d("test", "success click");
                 registerUser();
+
             }
         });
 

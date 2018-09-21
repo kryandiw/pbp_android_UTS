@@ -60,7 +60,6 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             finish();
-            System.exit(0);
         }
     }
 
@@ -87,7 +86,6 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             //open home
-            Log.d("testing", "enter if");
             fragmentManager.beginTransaction().replace(R.id.framelayout, new homeFragment())
                     .commit();
         }

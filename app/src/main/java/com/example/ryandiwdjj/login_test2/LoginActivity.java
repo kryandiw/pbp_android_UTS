@@ -26,8 +26,6 @@ public class LoginActivity extends AppCompatActivity {
     private TextView forgot_password;
     private Button login;
 
-    private FirebaseAuth mAuth;
-
     private ProgressDialog progressBar;
 
     private String email_signup="";
@@ -43,11 +41,15 @@ public class LoginActivity extends AppCompatActivity {
         forgot_password = findViewById(R.id.btnForgot);
         login = findViewById(R.id.btnLogin);
 
-        mAuth = FirebaseAuth.getInstance();
-
         getEmail();
 
-
+        forgot_password.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this, forgotActivity.class);
+                startActivity(i);
+            }
+        });
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override

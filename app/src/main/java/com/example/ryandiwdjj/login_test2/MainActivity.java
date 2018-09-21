@@ -25,6 +25,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        fragmentManager.beginTransaction().replace(R.id.framelayout, new homeFragment())
+                .commit();
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +60,7 @@ public class MainActivity extends AppCompatActivity
             drawer.closeDrawer(GravityCompat.START);
         } else {
             finish();
+            System.exit(0);
         }
     }
 
@@ -89,12 +93,18 @@ public class MainActivity extends AppCompatActivity
         }
         else if (id == R.id.nav_teacher) {
             //open navigation to recycler view teacher
+            fragmentManager.beginTransaction().replace(R.id.framelayout, new teacherFragment())
+                    .commit();
         }
         else if (id == R.id.nav_profile) {
             //open profile of the user
+            fragmentManager.beginTransaction().replace(R.id.framelayout, new profileFragment())
+                    .commit();
         }
         else if (id == R.id.nav_about) {
             //open about us (the dev)
+            fragmentManager.beginTransaction().replace(R.id.framelayout, new aboutFragment())
+                    .commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

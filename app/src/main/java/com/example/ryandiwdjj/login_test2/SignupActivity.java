@@ -63,7 +63,7 @@ public class SignupActivity extends AppCompatActivity {
         name = findViewById(R.id.signup_name);
         password = findViewById(R.id.signup_password);
         verif_password = findViewById(R.id.verif_password);
-        upload_image = findViewById(R.id.btn_upload);
+        //upload_image = findViewById(R.id.btn_upload);
         signup = findViewById(R.id.btn_activity_signup);
         progressBar = findViewById(R.id.progressBar);
 
@@ -76,14 +76,14 @@ public class SignupActivity extends AppCompatActivity {
             }
         });
 
-        upload_image.setOnClickListener(new View.OnClickListener() {
+        /**upload_image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 showImageChooser();
                 //uploadImageToFirebase(); //procedure to upload image to firebase
                 //saveUserInformation();
             }
-        });
+        });*/
     }
 
     @Override
